@@ -8,6 +8,7 @@ Note: Requires GCC to run application
 ## Server Terminal
 1. gcc DHashem-FIFO-Server.c -o fifo-server
 2. ./fifo-server
+
 Server Terminal will stall while waiting for client connections
 Server will output status updates and not except direct input
 
