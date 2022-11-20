@@ -3,7 +3,18 @@
 ### A one to many node connection including message queues and a custom designed system request structure for message communication. 
 
 Note: Requires GCC to run application
-Terminal Command instructions below:
+# Terminal Command instructions below:
 
-1. Open a bash terminal
-2. gcc DHashem-FIFO-Server.c -0 
+## Server Terminal
+1. gcc DHashem-FIFO-Server.c -o fifo-server
+2. ./fifo-server
+Server Terminal will stall while waiting for client connections
+Server will output status updates and not except direct input
+
+## Client Terminal
+[Repeat steps in n terminals for n clients]
+1. gcc DHashem-FIFO-Client.c -o fifo-client-n
+2. ./fifo-client-n
+
+Repeat client setup for all client terminals before following terminal prompt
+Note: System messages are of type Char and must not contain any spaces
